@@ -7,29 +7,5 @@
     android:orientation="horizontal"
     tools:context="cn.woblog.testloadimage.MainActivity">
 
-    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
-                  android:layout_weight="1" android:orientation="vertical">
-        <ImageView
-            android:id="@+id/iv1"
-            android:src="@drawable/ic_launcher"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="1"/>
-        <ImageView
-            android:id="@+id/iv2"
-            android:layout_width="match_parent" android:layout_height="0dp"
-            android:layout_weight="1"/>
-    </LinearLayout>
-    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent"
-                  android:layout_weight="1" android:orientation="vertical">
-        <ImageView
-            android:id="@+id/iv3"
-            android:layout_width="match_parent"
-            android:layout_height="0dp" android:layout_weight="1"/>
-        <ImageView
-            android:id="@+id/iv4"
-            android:layout_width="match_parent" android:layout_height="0dp"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-
+   <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="testSpeed" android:text="测试加载速度"/>
 </LinearLayout>
