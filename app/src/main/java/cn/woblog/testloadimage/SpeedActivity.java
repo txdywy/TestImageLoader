@@ -28,6 +28,6 @@ public class SpeedActivity extends AppCompatActivity {
         //java.lang.IllegalStateException: Center crop requires calling resize with positive width and height.
         Picasso.with(this).load(imgUrl).
 //                centerCrop().
-                into(iv2);
+        into(iv2);
     }
 }

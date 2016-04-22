@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     public void testSpeed(View view){
         startActivity(new Intent(MainActivity.this,SpeedActivity.class));
     }
+    public void testList(View view){
+        startActivity(new Intent(MainActivity.this,ListActivity.class));
+    }
 
 
 }

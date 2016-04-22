@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="cn.woblog.testloadimage.MainActivity">
 
    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="testSpeed" android:text="测试加载速度"/>
+   <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="testList" android:text="测试List"/>
 </LinearLayout>
