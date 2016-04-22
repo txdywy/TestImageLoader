@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import cn.woblog.testloadimage.adapter.ImageAdapter;
+import cn.woblog.testloadimage.adapter.ImageListAdapter;
 
 public class ListActivity extends AppCompatActivity {
 
@@ -16,7 +18,10 @@ public class ListActivity extends AppCompatActivity {
 
     private ImageAdapter mAdapter;
 
-    private RecyclerView rv1;
+    private ListView lv;
+
+    private ImageListAdapter mListAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,11 +32,11 @@ public class ListActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(mAdapter = new ImageAdapter(this));
 
-//        rv1 = (RecyclerView) findViewById(R.id.rv1);
-//        rv1.setLayoutManager(new LinearLayoutManager(this));
-//        rv1.setAdapter(mAdapter);
+        lv = (ListView) findViewById(R.id.lv);
+        lv.setAdapter(mListAdapter = new ImageListAdapter(this));
 
         mAdapter.setData(getTestData());
+        mListAdapter.setDatas(getTestData());
     }
 
     private List<String> getTestData() {
