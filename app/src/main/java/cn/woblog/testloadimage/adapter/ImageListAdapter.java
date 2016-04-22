@@ -28,7 +28,7 @@ public class ImageListAdapter extends CustomBaseAdapter<String> {
 
             holder = (ImageHolder) convertView.getTag();
         }
-
+        holder.iv.setAdjustViewBounds(true);
         Glide.with(context).load(datas.get(position)).placeholder(R.drawable.ic_launcher).error(R.drawable.error).centerCrop().crossFade().into(holder.iv);
         return convertView;
     }
