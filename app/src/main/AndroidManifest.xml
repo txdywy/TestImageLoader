@@ -22,6 +22,11 @@
         </activity>
         <activity android:name=".SpeedActivity">
         </activity>
+        <activity
+            android:name=".CustomTargetActivity"
+            android:label="@string/title_activity_custom_target"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

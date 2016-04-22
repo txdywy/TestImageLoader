@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
     public void testList(View view){
         startActivity(new Intent(MainActivity.this,ListActivity.class));
     }
+    public void customTarget(View view){
+        startActivity(new Intent(MainActivity.this,CustomTargetActivity.class));
+    }
 
 
 }
