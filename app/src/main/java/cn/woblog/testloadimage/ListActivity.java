@@ -4,7 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.ListView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.MemoryCategory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,5 +66,9 @@ public class ListActivity extends AppCompatActivity {
 //        strings.add("http://img2.duitang.com/uploads/item/201304/10/20130410194927_CVYsE.thumb.600_0.jpeg");
 //        strings.add("http://img.web07.cn/uploads/Photo/c101201/12911A0640P-23292.jpg");
         return strings;
+    }
+
+    public void changeMemory(View view){
+        Glide.get(this).setMemoryCategory(MemoryCategory.LOW);
     }
 }

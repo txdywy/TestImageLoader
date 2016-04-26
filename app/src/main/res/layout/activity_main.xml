@@ -10,4 +10,5 @@
    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="testSpeed" android:text="测试加载速度"/>
    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="testList" android:text="测试List"/>
    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="customTarget" android:text="测试加载图片到LinearLayout"/>
+   <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="circleImage" android:text="圆角图片"/>
 </LinearLayout>

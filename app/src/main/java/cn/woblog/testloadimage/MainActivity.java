@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
     public void customTarget(View view){
         startActivity(new Intent(MainActivity.this,CustomTargetActivity.class));
     }
+    public void circleImage(View view){
+        startActivity(new Intent(MainActivity.this,CircleImageActivity.class));
+    }
 
 
 }
