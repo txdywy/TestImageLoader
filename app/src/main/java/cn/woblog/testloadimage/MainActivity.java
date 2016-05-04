@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
     public void circleImage(View view){
         startActivity(new Intent(MainActivity.this,CircleImageActivity.class));
     }
+    public void testLifeCycle(View view){
+        startActivity(new Intent(MainActivity.this,LifeCycleActivity.class));
+    }
 
 
 }

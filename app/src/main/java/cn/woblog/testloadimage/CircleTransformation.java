@@ -29,7 +29,7 @@ public class CircleTransformation extends BitmapTransformation {
     private Bitmap circleCrop(BitmapPool pool, Bitmap toTransform) {
         if (toTransform == null) return null;
 
-        int size = Math.min(toTransform.getWidth(), toTransform.getHeight());
+        int size = Math.min(toTransform.getWidth(), toTransform.getHeight()); //算出这个bitmap的最小尺寸
         int x = (toTransform.getWidth() - size) / 2;
         int y = (toTransform.getHeight() - size) / 2;
 
